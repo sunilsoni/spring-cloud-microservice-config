@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: cloud
+    active: development #cloud
 ---
 spring:
   profiles: cloud
