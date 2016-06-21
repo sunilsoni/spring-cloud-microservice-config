@@ -20,12 +20,12 @@ endpoints:
     sensitive: false
 eureka:
   instance:
-    hostname: discovery
+    hostname: discovery-microservice.azurewebsites.net
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://discovery-kb.cfapps.io/eureka/
+      defaultZone: http://discovery-microservice.azurewebsites.net/eureka/
 
 ---
 
