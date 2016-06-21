@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: development#cloud
+    active: cloud
 ---
 
 spring:
@@ -18,8 +18,8 @@ spring:
               label: master
             rating:
               label: master
-server:
-  port: 8888
+#server:
+ # port: 8888
 endpoints:
   restart:
     enabled: true
@@ -35,7 +35,8 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery-kb.cfapps.io/eureka/
+      defaultZone: http://discovery-microservice.azurewebsites.net/eureka/
+	  #http://discovery-kb.cfapps.io/eureka/
 
 ---
 
@@ -50,8 +51,8 @@ spring:
           repositories:
             movie:
               label: master
-server:
-  port: 8888
+#server:
+ # port: 8888
 endpoints:
   restart:
     enabled: true
@@ -85,8 +86,8 @@ spring:
               label: lattice
             rating:
               label: lattice
-server:
-  port: 8888
+#server:
+ # port: 8888
 endpoints:
   restart:
     enabled: true
