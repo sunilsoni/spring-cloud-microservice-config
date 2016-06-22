@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: development #cloud
+    active: cloud
 ---
 spring:
   profiles: cloud
@@ -12,9 +12,9 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-kb.cfapps.io/eureka/
+      defaultZone: http://discovery-microservice.azurewebsites.net/eureka/
   instance:
-    hostname: users-kb.cfapps.io
+    hostname: discovery-microservice.azurewebsites.net
     nonSecurePort: 80
 ribbon:
   eureka:

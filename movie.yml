@@ -1,20 +1,20 @@
 spring:
   profiles:
-    active: development #cloud
+    active: cloud
 ---
 spring:
   profiles: cloud
-  jpa:
-    show_sql: false
-    database: MYSQL
-    hibernate:
-      ddl-auto: none
+#  jpa:
+#    show_sql: false
+ #   database: MYSQL
+  #  hibernate:
+   #   ddl-auto: none
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-kb.cfapps.io/eureka/
+      defaultZone: http://discovery-microservice.azurewebsites.net/eureka/
   instance:
-    hostname: movie-kb.cfapps.io
+    hostname: discovery-microservice.azurewebsites.net
     nonSecurePort: 80
 ribbon:
   eureka:
